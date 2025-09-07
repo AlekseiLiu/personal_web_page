@@ -1,56 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aleksei's Personal Page</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            color: #333;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-        }
-        .container {
-            text-align: center;
-            background-color: #ffffff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            max-width: 600px;
-            width: 100%;
-        }
-        h1 {
-            margin-bottom: 10px;
-        }
-        p {
-            margin-bottom: 20px;
-            line-height: 1.6;
-        }
-        a {
-            color: #0073b1;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-    </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Aleksei Liuliakov – Machine Learning</title>
+    <meta name="description" content="PhD candidate in Machine Learning focused on anomaly & out-of-distribution detection, AutoML, and robust AI." />
+    <meta name="theme-color" content="#1d64d4" />
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Future: Open Graph, favicon links, structured data -->
 </head>
 <body>
-    <div class="container">
-        <h1>Aleksei</h1>
-        <p>Currently pursuing a PhD in Machine Learning at Bielefeld University.</p>
-        <p>
-            Connect with me on <a href="https://www.linkedin.com/in/aleksei-liuliakov-7528591b3" target="_blank" rel="noopener noreferrer">LinkedIn</a>.
-        </p>
+    <a href="#main" class="visually-hidden">Skip to content</a>
+    <div class="wrapper">
+        <header>
+            <div class="profile">
+                <img src="images/img.jpg" alt="Aleksei Liuliakov" class="profile-photo" width="300" height="300" />
+                <div>
+                    <h1>Aleksei Liuliakov</h1>
+                    <p class="tagline readable">PhD Candidate in Machine Learning – anomaly & out-of-distribution detection, AutoML, graph neural networks, robust AI.</p>
+                    <ul class="inline-list" aria-label="Core focus areas">
+                        <li>Anomaly Detection</li>
+                        <li>AutoML</li>
+                        <li>GNNs</li>
+                        <li>Robust ML</li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <main id="main">
+            <section id="about">
+                <h2>About</h2>
+                <p class="readable">PhD candidate at Bielefeld University working on methods for detecting anomalies and handling distribution shifts. Experience spans automated model & feature selection pipelines (TPOT, Optuna), temporal graph modeling, and robust uncertainty-aware detection approaches.</p>
+            </section>
+            <section id="work">
+                <h2>Current Focus</h2>
+                <p class="readable">Designing graph-based and probabilistic approaches that improve reliability of anomaly detection under noise and adversarial or shifted conditions.</p>
+            </section>
+            <section id="contact">
+                <h2>Contact</h2>
+                <p class="readable">Connect on <a href="https://www.linkedin.com/in/aleksei-liuliakov/" target="_blank" rel="noopener noreferrer">LinkedIn</a> or reach via email (available on request).</p>
+            </section>
+        </main>
+        <footer>
+            <p>© <span id="year"></span> Aleksei Liuliakov</p>
+        </footer>
     </div>
+    <script>
+        // Minimal progressive enhancement: set current year, no other JS for MVP
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
 </body>
 </html>
 
